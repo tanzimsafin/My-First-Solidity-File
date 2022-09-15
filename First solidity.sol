@@ -7,4 +7,23 @@
      bool public mybool=true;
      int public minint=type(int).min;
      int public maxint=type(int).max;
+     function add(uint x,uint y) external pure returns(uint) {
+         return x + y;
+         }
+     function sub(int x,int y) external pure returns(int){
+         return x-y;
+         }
+    function mul (int x,int y) external pure returns(int){
+        return x*y;
+    }
+    function div (int x,int y) external pure returns(int){
+        return x/y;
+    }
+    function floor_div (int x,int y) external pure returns(int){
+        return x%y;
+    }
+    function pow(uint x,uint y) external pure returns(uint){
+        return x**y;
+    }
  }
+ 
